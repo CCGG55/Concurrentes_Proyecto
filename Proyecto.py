@@ -1,5 +1,5 @@
 import streamlit as st
-#from bing_image_downloader import downloader
+from bing_image_downloader import downloader
 import threading
 import os
 import shutil
@@ -14,8 +14,7 @@ from pycudaEx import PyCudaEx
 
 
 class ImageDownloader:
-    """
-    #Clase para manejar la descarga de imágenes utilizando múltiples hilos.
+    """Clase para manejar la descarga de imágenes utilizando múltiples hilos."""
 
     def __init__(self, download_folder="downloaded_images"):
         self.download_folder = download_folder
@@ -35,7 +34,7 @@ class ImageDownloader:
             downloader.download(modified_keyword, limit=num_images, output_dir=thread_folder, adult_filter_off=True, force_replace=False, timeout=60)
             total_downloaded = sum([len(files) for r, d, files in os.walk(self.download_folder)])
 
-"""
+
     def clean_download_folder(self):
         """Limpia el directorio de descarga."""
         if os.path.exists(self.download_folder):
