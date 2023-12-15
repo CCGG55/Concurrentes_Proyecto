@@ -1,0 +1,10 @@
+bing_image_downloader==1.1.2
+matplotlib==3.8.2
+mpi4py==3.1.5
+numpy==1.26.2
+opencv_contrib_python==4.8.1.78
+opencv_python==4.8.1.78
+Pillow==10.1.0
+Pillow==10.1.0
+pycuda==2023.1
+streamlit==1.29.0
